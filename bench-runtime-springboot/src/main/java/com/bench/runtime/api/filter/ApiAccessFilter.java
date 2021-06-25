@@ -16,7 +16,7 @@ import com.alibaba.fastjson.JSONObject;
 
 import com.bench.runtime.api.mapping.ParamMappingUtil;
 import com.bench.runtime.api.properties.HttpApiProperties;
-import com.yuan.common.model.JsonResult;
+import com.bench.common.model.JsonResult;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 

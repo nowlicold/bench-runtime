@@ -4,10 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.3.7.RELEASE</version>
-        <relativePath/>
+        <groupId>com.bench</groupId>
+        <artifactId>bench-dependency</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.bench.runtime</groupId>
     <artifactId>bench-runtime</artifactId>
@@ -25,13 +24,7 @@
 
     <dependencyManagement>
         <dependencies>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.3.7.RELEASE</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
+
             <dependency>
                 <groupId>com.bench.runtime</groupId>
                 <artifactId>common-model</artifactId>

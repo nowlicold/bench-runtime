@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpServletResponseWrapper;
 
 import com.alibaba.fastjson.JSONObject;
-import com.yuan.common.model.JsonResult;
+import com.bench.common.model.JsonResult;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
