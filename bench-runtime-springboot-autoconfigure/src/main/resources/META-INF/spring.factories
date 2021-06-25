@@ -1,9 +1,0 @@
-# Auto Configure
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.bench.runtime.rest.autoconfig.HttpClientAutoConfiguration,\
-  com.bench.runtime.api.autoconfig.ApiAccessFilterAutoConfiguration,\
-  com.bench.runtime.mvc.autoconfig.LongToStringAutoConfiguration,\
-  com.bench.runtime.authority.autoconfig.AuthorityProcessorAutoConfiguration,\
-  com.bench.runtime.thread.autoconfig.ThreadPoolAutoConfiguration,\
-  com.bench.runtime.rest.autoconfig.RestTemplateAutoConfiguration,\
-  com.bench.runtime.dingding.autoconfig.DingDingClientAutoConfiguration

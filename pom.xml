@@ -16,7 +16,7 @@
 
     <modules>
         <module>bench-runtime-springboot-starter</module>
-        <module>bench-runtime-springboot-autoconfigure</module>
+        <module>bench-runtime-springboot</module>
     </modules>
 
     <properties>

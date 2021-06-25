@@ -18,7 +18,7 @@
     <dependencies>
         <dependency>
             <groupId>com.bench.runtime</groupId>
-            <artifactId>bench-runtime-springboot-autoconfigure</artifactId>
+            <artifactId>bench-runtime-springboot</artifactId>
             <version>${project.version}</version>
         </dependency>
     </dependencies>
