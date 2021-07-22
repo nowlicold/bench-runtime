@@ -89,7 +89,7 @@
     <logger name="com.baomidou" level="WARN"/>
 
     <springProfile name="local">
-        <logger name="com.yuan" level="DEBUG"/>
+        <logger name="com" level="DEBUG"/>
         <root level="DEBUG">
             <appender-ref ref="STDOUT"/>
             <appender-ref ref="LOG_FILE"/>
@@ -97,7 +97,7 @@
     </springProfile>
 
     <springProfile name="dev">
-        <logger name="com.yuan" level="DEBUG"/>
+        <logger name="com" level="DEBUG"/>
         <root level="DEBUG">
             <appender-ref ref="STDOUT"/>
             <appender-ref ref="LOG_FILE"/>
@@ -105,14 +105,14 @@
     </springProfile>
 
     <springProfile name="daily">
-        <logger name="com.yuan" level="INFO"/>
+        <logger name="com" level="INFO"/>
         <root level="INFO">
             <appender-ref ref="LOG_FILE"/>
         </root>
     </springProfile>
 
     <springProfile name="pre">
-        <logger name="com.yuan" level="INFO"/>
+        <logger name="com" level="INFO"/>
         <root level="INFO">
             <appender-ref ref="STDOUT"/>
             <appender-ref ref="LOG_FILE"/>
@@ -120,14 +120,14 @@
     </springProfile>
 
     <springProfile name="gray">
-        <logger name="com.yuan" level="INFO"/>
+        <logger name="com" level="INFO"/>
         <root level="INFO">
             <appender-ref ref="LOG_FILE"/>
         </root>
     </springProfile>
 
     <springProfile name="prod">
-        <logger name="com.yuan" level="INFO"/>
+        <logger name="com" level="INFO"/>
         <root level="INFO">
             <appender-ref ref="LOG_FILE"/>
         </root>
