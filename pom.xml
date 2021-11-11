@@ -85,7 +85,7 @@
         <repository>
             <id>yuan-nexus-releases</id>
             <name>Team Nexus Repository</name>
-            <url>http://192.168.1.151:1200/repository/maven-releases/</url>
+            <url>http://35.76.186.9:8081/repository/maven-releases/</url>
             <layout>default</layout>
             <releases>
                 <enabled>true</enabled>
@@ -97,7 +97,7 @@
         <repository>
             <id>yuan-nexus-snapshots</id>
             <name>Team Nexus Repository</name>
-            <url>http://192.168.1.151:1200/repository/maven-snapshots/</url>
+            <url>http://35.76.186.9:8081/repository/maven-snapshots/</url>
             <layout>default</layout>
             <releases>
                 <enabled>false</enabled>
@@ -113,12 +113,12 @@
         <repository>
             <id>yuan-nexus-releases</id>
             <name>Team Nexus Repository</name>
-            <url>http://192.168.1.151:1200/repository/maven-releases/</url>
+            <url>http://35.76.186.9:8081/repository/maven-releases/</url>
         </repository>
         <snapshotRepository>
             <id>yuan-nexus-snapshots</id>
             <name>Team Nexus Repository</name>
-            <url>http://192.168.1.151:1200/repository/maven-snapshots/</url>
+            <url>http://35.76.186.9:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
