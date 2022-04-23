@@ -97,7 +97,7 @@
     </springProfile>
 
     <springProfile name="dev">
-        <logger name="com" level="INFO"/>
+        <logger name="com" level="DEBUG"/>
         <root level="DEBUG">
             <appender-ref ref="STDOUT"/>
             <appender-ref ref="LOG_FILE"/>
