@@ -26,7 +26,7 @@
         <dependencies>
 
             <dependency>
-                <groupId>com.bench.runtime</groupId>
+                <groupId>com.bench.common</groupId>
                 <artifactId>common-model</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
