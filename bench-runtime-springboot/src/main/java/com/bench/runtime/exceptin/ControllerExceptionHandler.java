@@ -52,7 +52,7 @@ public class ControllerExceptionHandler {
     @ResponseBody
     public JsonResult<Object> handleHttpRequestMethodNotSupportedException(HttpRequestMethodNotSupportedException e,
                                                                            HttpServletRequest request) {
-        log.error("HttpRequestMethodNotSupportedException[{} => {}]", request.getRequestURI(), e.getMessage(), e);
+        log.warn("HttpRequestMethodNotSupportedException[{} => {}]", request.getRequestURI(), e.getMessage(), e);
         return JsonResult.error(CommonErrorEnum.METHOD_NOT_SUPPORTED.message(),
             CommonErrorEnum.METHOD_NOT_SUPPORTED.name());
     }
@@ -62,15 +62,13 @@ public class ControllerExceptionHandler {
     public JsonResult<Object> handleMethodArgumentNotValidException(MethodArgumentNotValidException e,
                                                                     HttpServletRequest request) {
         List<FieldError> fieldErrors = e.getBindingResult().getFieldErrors();
-        StringBuilder sb = new StringBuilder("");
-        Iterator var5 = fieldErrors.iterator();
-        while (var5.hasNext()) {
-            FieldError fieldError = (FieldError)var5.next();
+        StringBuilder sb = new StringBuilder();
+        for (FieldError fieldError : fieldErrors) {
             sb.append(fieldError.getDefaultMessage()).append(";");
         }
 
         String msg = sb.toString();
-        log.error("handleMethodArgumentNotValidException:{} => {}", request.getRequestURI(), msg, e);
+        log.warn("handleMethodArgumentNotValidException:{} => {}", request.getRequestURI(), msg, e);
         return JsonResult.error(msg, CommonErrorEnum.ARGUMENT_NOT_VALID.name());
     }
 
